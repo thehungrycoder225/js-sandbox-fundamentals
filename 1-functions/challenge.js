@@ -18,34 +18,3 @@
 // Data 2: IIST Score: 25, 25, and 21. CABG Score: 21, 18, 25.
 // Data 3: CEASS Score: 25, 13, and 12. CONAHS Score: 10, 25, 25.
 // Data 4: CEASS Score: 18, 25, and 20. CONAHS Score: 25, 13, 25.
-
-// const yearNow = new Date().getFullYear();
-
-// // Compute User Age
-// const calcAge = (birthYear) => {
-//   age = yearNow - birthYear;
-//   return age;
-// };
-
-// // Determine if user is Eligible
-// function isEligible(birthYear, employee) {
-//   let employeeName = employee;
-//   let employeeAge = calcAge(birthYear);
-//   const retireAge = 65;
-//   if (employeeAge >= retireAge) {
-//     console.log(`${employeeName} is eligible for Retirement`);
-//   } else {
-//     calcRetirementYear();
-//   }
-
-//   // Calculate the Remaining Remaining Years for Retirement
-//   function calcRetirementYear() {
-//     const retireYear = retireAge - employeeAge + yearNow;
-//     const remainingYears = retireYear - yearNow;
-//     return console.log(
-//       `${employeeName} is ${employeeAge} years old and will be eligible for retirement in the Year ${retireYear}, there are ${remainingYears} years left`
-//     );
-//   }
-// }
-
-// isEligible();

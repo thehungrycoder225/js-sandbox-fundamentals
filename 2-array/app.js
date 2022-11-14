@@ -9,7 +9,7 @@ const avenger4 = 'Thor';
 
 // Array
 const avengers = ['Tony', 'Steve', 'Natasha', 'Thor'];
-const jLeague = new Array('Batman', 'Superman', 'Wonderwoman', 'Flash');
+const jLeague = new Array('Batman', 'Superman', 'Wonder_Woman', 'Flash');
 
 // Select Array Item
 // c(avengers[0]);
@@ -19,7 +19,7 @@ const jLeague = new Array('Batman', 'Superman', 'Wonderwoman', 'Flash');
 
 // Array Methods
 // Push adds new Item / Element in the Array
-// avengers.push('Spiderman');
+// avengers.push('Spider_Man');
 // c(avengers);
 
 // Unshift Method adds new Item / Element in the Beginning of the Arrays
