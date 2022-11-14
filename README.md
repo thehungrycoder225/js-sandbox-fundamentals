@@ -4,6 +4,10 @@
 
 # Use this repository to learn the fundamentals of JavaScript
 
+## Variables learn how to use let, const, and var
+
+## Conditional Statements: How to write conditional statements. There are eight conditions (>, <, >=, <=, ==, !=, ===, !==) and you need to know which one is used for what purpose. You should also know about && and || and how to use them to achieve multiple conditions. Moreover, you must know about if, else if, and else. Try writing conditions using one if statement, multiple else if statements, and one else statement. You write a code that finds a student’s grade from their mark number.
+
 ## Functions are one of the most important things in programming. You should be able to declare a simple function. Have good knowledge of when to return from a function and when not to. Aside from declaring a function, you should also be able to pass parameters into a function and call it.
 ## Array: You need to know how to declare an array. You should also have a clear understanding of when and how terms like length, index, push, pop, indexOf, and includes work in JS. You should be comfortable playing with an array. For example, you should be able to check whether an element is present in an array or not. Take a look at how slice and splice work. For additional learning, you can learn about shift, unshift, join, and if you want to learn a bit more, then check out Reduce.
 
