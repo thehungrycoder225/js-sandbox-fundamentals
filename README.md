@@ -15,4 +15,4 @@
 
 ## Loops : You must know about two basic loops for loop and while loop. You should also understand when to use "for of" and "for in". We use "for of" and "for in" to iterate over array and object elements, respectively.
 
-### ccto How much JavaScript should I learn? 🤔 - https://medium.com/@shadmansaalim321/how-much-javascript-should-you-learn-8c9178ef6f5
+### source:How much JavaScript should I learn? 🤔 - https://medium.com/@shadmansaalim321/how-much-javascript-should-you-learn-8c9178ef6f5
