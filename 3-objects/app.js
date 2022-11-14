@@ -21,7 +21,9 @@ const dateNow = new Date().getFullYear();
 // c(avenger['last_name']);
 
 // Mutate Object data
+// Dot Notation
 // avenger.address = 'Manhattan';
+// Brackets Notation
 // avenger['status'] = 'active';
 // c(avenger);
 
@@ -30,7 +32,7 @@ const dateNow = new Date().getFullYear();
 //   first_name: 'Bruce',
 //   last_name: 'Wayne',
 //   age: null,
-//   birthYear: 1900,
+//   birthYear: 1992,
 //   role: 'Batman',
 //   address: '',
 //   status: '',

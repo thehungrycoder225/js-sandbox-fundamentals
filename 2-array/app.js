@@ -12,22 +12,23 @@ const avengers = ['Tony', 'Steve', 'Natasha', 'Thor'];
 const jLeague = new Array('Batman', 'Superman', 'Wonder_Woman', 'Flash');
 
 // Select Array Item
-// c(avengers[0]);
+// c(jLeague[0]);
 
 // Calculate Array Length
 // c(jLeague.length);
 
 // Array Methods
+// c(avengers);
 // Push adds new Item / Element in the Array
 // avengers.push('Spider_Man');
 // c(avengers);
 
 // Unshift Method adds new Item / Element in the Beginning of the Arrays
-// avengers.unshift('Parker');
+// avengers.unshift('Wanda');
 // c(avengers);
 
 // Splice Method adds / remove items
-// avengers.splice(2, 0, 'Hulk', 'Hawkeye');
+// avengers.splice(1, 0, 'Hulk');
 // c(avengers);
 
 // Pop removes an item in the Array
@@ -39,8 +40,8 @@ const jLeague = new Array('Batman', 'Superman', 'Wonder_Woman', 'Flash');
 // c(avengers);
 
 // IndexOf returns the index of which the Item is located
-// avengers.indexOf('');
+// c(avengers.indexOf('Natasha'));
 
 // includes checks if the array includes the specified item and returns a boolean data
-// c(avengers.includes('item'));
+// c(avengers.includes('Wanda'));
 // c(avengers.includes('Tony'));
