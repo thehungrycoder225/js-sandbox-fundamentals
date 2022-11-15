@@ -1,6 +1,14 @@
 const c = console.log.bind(this);
 const dateNow = new Date().getFullYear();
+
 // Object Construction
+
+const dog = {
+  name: 'Marley',
+  color: 'Brown',
+  age: 3,
+  breed: 'Labrador Retriever',
+};
 
 // const avenger = {
 //   first_name: 'Tony',
@@ -12,27 +20,45 @@ const dateNow = new Date().getFullYear();
 //   isActive: true,
 // };
 
-// c(avenger);
+// c(dog);
 
 // Retrieve Data from an Object
 // Dot Notation
-// c(avenger.first_name);
+// c(dog.name);
 // Brackets Notation
-// c(avenger['last_name']);
+// c(dog['age']);
 
 // Mutate Object data
-// Dot Notation
-// avenger.address = 'Manhattan';
+// dog.age = 4;
 // Brackets Notation
-// avenger['status'] = 'active';
-// c(avenger);
+// dog.color = 'Light Brown';
+// c(dog);
+
+const cat = {
+  name: 'Salem',
+  color: 'Black',
+  age: null,
+  breed: 'Persian',
+  birthYear: 2018,
+  calcAge: function () {
+    this.age = dateNow - this.birthYear;
+    return this.age;
+  },
+};
+
+c(cat);
+cat.calcAge();
+c(cat);
+cat.birthYear = 2009;
+cat.calcAge();
+c(cat);
 
 // Object Methods
 // const jLeague = {
 //   first_name: 'Bruce',
 //   last_name: 'Wayne',
 //   age: null,
-//   birthYear: 1992,
+//   birthYear: 1989,
 //   role: 'Batman',
 //   address: '',
 //   status: '',

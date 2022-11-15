@@ -1,0 +1,20 @@
+// Numbers Built in Functions
+// 1. Math.round()
+// 2. Math.floor()
+// 3. Math.ceil()
+// 4. Math.random()
+// 5. Math.pow()
+// 6. Math.sqrt()
+// 7. Math.abs()
+// 8. Math.min()
+// 9. Math.max()
+// 10. Math.PI
+// 11. Math.E
+// 12. Math.sin()
+// 13. Math.cos()
+// 14. Math.tan()
+// 15. Math.asin()
+// 16. Math.acos()
+// 17. Math.atan()
+// 18. Math.atan2()
+// 19. Math.log()
