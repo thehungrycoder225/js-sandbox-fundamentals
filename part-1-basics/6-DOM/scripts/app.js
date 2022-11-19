@@ -17,3 +17,13 @@
 // 9. insertBefore()
 // 10. addEventListener()
 // 11. removeEventListener()
+// 12. setAttribute()
+// 13. getAttribute()
+// 14. removeAttribute()
+// 15. hasAttribute()
+// 16. style
+
+('use strict');
+const c = console.log.bind(this);
+
+// Start Here
