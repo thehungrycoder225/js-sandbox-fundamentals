@@ -44,6 +44,12 @@ body {
   min-height: 100vh;
 }
 
+img {
+  width: min(40rem, 100%);
+  object-fit: contain;
+  border-radius: 1rem;
+}
+
 .container {
   width: min(100rem, 100%);
   margin: 0 auto;
@@ -95,8 +101,10 @@ body {
 .d__grid-center {
   display: grid;
   place-content: center;
-  align-items: baseline;
+  align-items: center;
   min-height: 100vh;
+  grid-template-columns: auto auto;
+  gap: 3rem;
 }
 
 .form__group {
@@ -177,14 +185,6 @@ body {
   transform: scale(1.1);
 }
 
-img {
-  position: absolute;
-  object-fit: contain;
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
 .box {
   aspect-ratio: 1/1;
   background: #b80867;
@@ -196,4 +196,8 @@ img {
 
 p {
   padding: 1.5rem 3rem;
+}
+
+.animate {
+  transform: scale(1.1);
 }
