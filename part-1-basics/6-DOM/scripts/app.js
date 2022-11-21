@@ -5,6 +5,7 @@
 // getElementsByTagName()  – select elements by a tag name.
 // getElementsByClassName() – select elements by one or more class names.
 // querySelector()  – select elements by CSS selectors.
+// querySelectorAll() – select elements by CSS selectors.
 
 // JavaScript DOM Manipulation
 
@@ -25,3 +26,4 @@
 const c = console.log.bind(window);
 
 // Start Here
+

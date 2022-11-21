@@ -1,4 +1,6 @@
+'use strict';
 const c = console.log.bind(this);
+
 // If elseif else
 const isTrue = true;
 if (isTrue) {
@@ -62,16 +64,3 @@ const colors = new Array('red', 'green', 'blue');
 // for (color of colors) {
 //   c(color);
 // }
-
-// Exercise #1
-
-// Create a function that determines whether an object is on landscape or portrait orientation
-
-// Exercise #2
-
-// Create a function that will:
-// Divisible by 3 => Fizz
-// Divisible by 5 => Buzz
-// Divisible by 3 and 5 => FizzBuzz
-// Not divisible by 3 or 5 => input
-// Not a number => 'Not a number'
