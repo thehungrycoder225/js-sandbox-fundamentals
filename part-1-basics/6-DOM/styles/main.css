@@ -201,3 +201,8 @@ p {
 .animate {
   transform: scale(1.1);
 }
+
+button::before {
+  content: '🍔';
+  padding: 0 0.5rem 0 0;
+}
