@@ -31,9 +31,9 @@ html {
 body {
   background: linear-gradient(
     -45deg,
-    #29042f 0%,
-    #52085e 44.79%,
-    #9d134c 99.48%
+    var(--color-primary) 0%,
+    var(--color-primary-light) 44.79%,
+    var(--color-secondary-light) 99.48%
   );
   background-position: center;
   background-repeat: no-repeat;
@@ -63,7 +63,7 @@ img {
   border-radius: 10%;
   display: block;
   position: absolute;
-  background: #ff0071;
+  background: var(--color-secondary);
   left: 0;
   top: 50%;
   box-shadow: 0 0 5rem #ff4754, 0 0 10rem #ff4754, 0 0 15rem #ff4754;

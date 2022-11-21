@@ -22,6 +22,6 @@
 // removeAttribute() – remove an attribute from a specified element.
 
 'use strict';
-const c = console.log.bind(window.console);
+const c = console.log.bind(window);
 
 // Start Here
