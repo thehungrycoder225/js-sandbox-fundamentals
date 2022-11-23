@@ -3,9 +3,9 @@ const c = console.log.bind(this);
 
 // Example
 
-let radius = 1;
-let x = 1;
-let y = 1;
+// let radius = 1;
+// let x = 1;
+// let y = 1;
 
 // A purpose of an object is to group related variables and functions together
 // Object Oriented Programming (OOP)
@@ -117,7 +117,6 @@ function createCharacter(name, level) {
     level,
   };
 }
-const characterOne = createCharacter('Snow', 1);
 
 // Constructor Function
 function Character(name, level) {
@@ -134,4 +133,38 @@ function Character(name, level) {
 // );
 // Character.call({}, 'Twilight', 1);
 
-const characterTwo = new Character('Twilight', 1);
+// Enumerating Properties of an Object
+
+// Object.keys() method returns an array of a given object's own enumerable property names, iterated in the same order that a normal loop would.
+
+// Object.entries() method returns an array of a given object's own enumerable string-keyed property [key, value] pairs, in the same order as that provided by a for...in loop.
+
+// Cloning an Object
+
+const createBox = (width, height) => {
+  return {
+    width,
+    height,
+  };
+};
+
+const box1 = createBox(1, 2);
+const box2 = {};
+
+// Old Way
+// for (let key in box1) {
+//   box2[key] = box1[key];
+// }
+
+// c(box2, box1);
+
+// Modern Way
+// const box3 = Object.assign(
+//   {
+//     color: 'red',
+//   },
+//   box1
+// );
+
+// Spread Operator
+// const box4 = { ...box1 };

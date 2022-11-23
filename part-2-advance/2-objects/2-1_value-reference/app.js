@@ -9,6 +9,8 @@ const c = console.log.bind(this);
 // let y = x;
 
 // x += 10;
+
+// c(x,y)
 // c(`this is x: ${x} and this is y: ${y}`);
 
 // let objX = { value: 10 };
