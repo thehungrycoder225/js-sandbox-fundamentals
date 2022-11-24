@@ -34,6 +34,8 @@
 
 -constructor function
 -factory function
+-cloning objects
+-value vs reference
 
 #### Arrays
 
