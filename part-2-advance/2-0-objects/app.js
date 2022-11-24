@@ -149,6 +149,7 @@ const createBox = (width, height) => {
 };
 
 const box1 = createBox(1, 2);
+
 const box2 = {};
 
 // Old Way
