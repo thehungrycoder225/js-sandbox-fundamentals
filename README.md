@@ -8,11 +8,11 @@
 
 #### Variables
 
--learn how to use let, const, and var
+- learn how to use let, const, and var
 
 #### Conditional Statements:
 
--How to write conditional statements. There are eight conditions (>, <, >=, <=, ==, !=, ===, !==) and you need to know which one is used for what purpose. You should also know about && and || and how to use them to achieve multiple conditions. Moreover, you must know about if, else if, and else. Try writing conditions using one if statement, multiple else if statements, and one else statement. You write a code that finds a student’s grade from their mark number.
+- How to write conditional statements. There are eight conditions (>, <, >=, <=, ==, !=, ===, !==) and you need to know which one is used for what purpose. You should also know about && and || and how to use them to achieve multiple conditions. Moreover, you must know about if, else if, and else. Try writing conditions using one if statement, multiple else if statements, and one else statement. You write a code that finds a student’s grade from their mark number.
 
 #### Functions are one of the most important things in programming.
 
@@ -24,7 +24,7 @@
 
 #### Objects:
 
--Learn how to declare an object and access its properties. You should also learn how to use an array or another object as an object’s property value.
+- Learn how to declare an object and access its properties. You should also learn how to use an array or another object as an object’s property value.
 
 #### Loops :
 
@@ -34,27 +34,27 @@
 
 #### Control Flow
 
--if else statement
--switch statement
--for loops
--while loop
--do while loop
--for of
--for in statement
+- if else statement
+- switch statement
+- for loops
+- while loop
+- do while loop
+- for of
+- for in statement
 
 #### Objects
 
--constructor function
--factory function
--cloning objects
--value vs reference
+- constructor function
+- factory function
+- cloning objects
+- value vs reference
 
 #### Arrays
 
--Adding elements
--Deleting elements
--Finding elements (Primitive types)
--Finding elements (Reference types)
+- Adding elements
+- Deleting elements
+- Finding elements (Primitive types)
+- Finding elements (Reference types)
 
 #### Functions
 
