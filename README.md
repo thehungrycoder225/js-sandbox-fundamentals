@@ -39,6 +39,9 @@
 
 #### Arrays
 
+-Adding elements in the array
+-Deleting elements
+
 #### Functions
 
 ### source:How much JavaScript should I learn? 🤔 - https://medium.com/@shadmansaalim321/how-much-javascript-should-you-learn-8c9178ef6f5
