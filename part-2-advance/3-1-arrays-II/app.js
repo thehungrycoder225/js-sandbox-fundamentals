@@ -21,7 +21,6 @@ let another = numbers;
 // Combining and Slicing Arrays
 const first = [1, 2, 3]; // Primitive Type
 const second = [4, 5, 6];
-
 const firstOjb = [{ id: 1 }]; // Reference Type
 
 // Combining arrays
@@ -65,6 +64,22 @@ const users = [
 // Solution 3 - .sort() with a compare function -> useful when array is made of objects
 
 // Testing the elements of an array
+const numberSet = [1, 2, -3, 4, 10];
+// .every() -> returns true if all elements in the array pass the test
+
+// .some() -> returns true if at least one element in the array pass the test
+
 // Filtering an array
+// .filter() -> returns a new array
+
 // Mapping an array
+// .map() -> returns a new array
+
+// Chaining
+
 // Reducing an array
+// .reduce() -> returns a single value (number, string, object, array) -> used to calculate a sum of an array
+
+// using for of loop
+
+// using .reduce()

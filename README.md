@@ -58,4 +58,18 @@
 
 #### Functions
 
+- Function Declaration
+- Hoisting -> JavaScript moves all function declarations to the top of the file
+- Arguments -> an array-like object
+- Rest Operator -> ES6
+- Default Parameters -> ES6
+- Getters and Setters -> ES6
+- Try and Catch -> ES6
+- Local vs Global Scope
+- Let vs Var
+- This Keyword
+- Changing the value of this
+
+### Step 3: OOP
+
 ### source:How much JavaScript should I learn? 🤔 - https://medium.com/@shadmansaalim321/how-much-javascript-should-you-learn-8c9178ef6f5
