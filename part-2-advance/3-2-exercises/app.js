@@ -14,7 +14,7 @@ const c = console.log.bind(this);
 // Create a function called move() that takes three arguments, array, index, offset, and returns the array with the element at the index moved to the offset.
 
 // Exercise #5
-// Create a function called countOccurences() that takes two arguments, array and searchElement, and returns the number of times the searchElement appears in the array.
+// Create a function called countOccurrences() that takes two arguments, array and searchElement, and returns the number of times the searchElement appears in the array.
 
 // Exercise #6
 // Create a function called getMax() that takes an array of numbers and returns the maximum number in the array.
