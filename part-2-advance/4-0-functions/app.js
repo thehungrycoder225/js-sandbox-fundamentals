@@ -43,14 +43,41 @@ function sumAll() {
 
 // Default Parameters -> ES6
 
+// Old Way
+// function interest(principal, rate, years) {
+//   rate = rate || 3.5;
+//   years = years || 5;
+//   return ((principal * rate) / 100) * years;
+// }
+
+// ES6
+// function interest(principal, rate = 3.5, years = 5) {} // default parameters
+// Best practice is to put default parameters at the end
+
 // Getters and Setters -> ES6
 
-// Try and Catch -> ES6
+let personObj = {
+  firstName: 'John',
+  lastName: 'Doe',
+};
+
+// getter -> access properties
+// setter -> change (mutate) them
+
+// Error Handling -> try, catch, throw, finally -> ES6
+// Defensive Programming -> try to prevent errors from happening
 
 // Local vs Global Scope
 
 // Let vs Var
 
+// var -> function scope -> global scope -> window object
+// avoid using var -> use let and const
+// let -> block scope -> global scope
+
 // This Keyword
+// this -> refers to the object that is executing the current function
+// method -> obj -> this -> obj
+// function -> global (window, global) -> this -> global (window, global)
 
 //  Changing the value of this

@@ -44,9 +44,9 @@ const fruits = ['🍈', '🍉', '🍊', '🍋', '🍌'];
 // Example
 const message = 'how to learn javascript in a day';
 // const parts = message.split(' ');
-// c(parts);
+
 // const combined = parts.join('+'); // this method is used to create a slug for a url
-// c(combined);
+
 // slug -> a string that is used to identify a web page in a search engine
 // https://www.google.com/search?q=how+to+learn+javascript+in+a+day
 
@@ -80,6 +80,14 @@ const numberSet = [1, 2, -3, 4, 10];
 // Reducing an array
 // .reduce() -> returns a single value (number, string, object, array) -> used to calculate a sum of an array
 
+// Example 1
+
 // using for of loop
 
 // using .reduce()
+
+// a = 0, c = 1 -> a = 1
+// a = 1, c = 2 -> a = 3
+// a = 3, c = -3 -> a = 0
+// a = 0, c = 4 -> a = 4
+// a = 4, c = 10 -> a = 14
