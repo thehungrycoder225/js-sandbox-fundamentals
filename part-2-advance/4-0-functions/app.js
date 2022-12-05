@@ -81,3 +81,43 @@ let personObj = {
 // function -> global (window, global) -> this -> global (window, global)
 
 //  Changing the value of this
+
+// Solution 1 -> self = this
+// const image = {
+//   title: 'My Image',
+//   tags: ['tag1', 'tag2'],
+//   showTags() {
+//     const self = this;
+//     this.tags.forEach(function (tag) {
+//       console.log(self.title, tag);
+//     }, this);
+//   },
+// };
+
+// Solution 2 -> bind Method
+//   title: 'My Image',
+//   tags: ['tag1', 'tag2'],
+//   showTags() {
+//     this.tags.forEach(
+//       function (tag) {
+//         console.log(this.title, tag);
+//       }.bind(this)
+//     );
+//   },
+// };
+
+// Solution 3 -> ES6 Arrow Function
+// const image = {
+//   title: 'My Image',
+//   tags: ['tag1', 'tag2'],
+//   showTags() {
+//     this.tags.forEach((tag) => {
+//       c(this.title, tag);
+//     });
+//   },
+// };
+
+// Call, Apply, and Bind -> ES6
+// call -> calls a function with a given this value and arguments provided individually
+// apply -> calls a function with a given this value and arguments provided as an array
+// bind -> returns a new function, allowing you to pass in a this array and any number of arguments

@@ -63,6 +63,11 @@ const users = [
 
 // Solution 3 - .sort() with a compare function -> useful when array is made of objects
 
+// ASCII Table -> https://www.asciitable.com/
+// use case -> sorting strings
+// .toLowerCase() -> converts a string to lowercase
+// .toUpperCase() -> converts a string to uppercase
+
 // Testing the elements of an array
 const numberSet = [1, 2, -3, 4, 10];
 // .every() -> returns true if all elements in the array pass the test
