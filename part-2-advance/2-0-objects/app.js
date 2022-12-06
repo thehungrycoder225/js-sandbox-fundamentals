@@ -1,95 +1,86 @@
 'use strict';
-const c = console.log.bind(this);
+const c = console.log.bind(this); // new = empty object
 
 // Example
 
-// let radius = 1;
-// let x = 1;
-// let y = 1;
+let radius = 1;
+let x = 1;
+let y = 1;
 
 // A purpose of an object is to group related variables and functions together
 // Object Oriented Programming (OOP)
 // Objects Key-Value Pairs
-// const circle = {
-//   radius: null, // Objects Key-Value Pairs
-//   location: {
-//     x: null,
-//     y: null,
-//   },
-//   // if a function is a part of an object, it is called a method
-//   drawCircle: function () {
-//     c('draw');
-//   },
-// };
+const circle = {
+  radius: null, // Objects Key-Value Pairs
+  // if a function is a part of an object, it is called a method
+  drawCircle: function () {
+    c('draw');
+  },
+};
 
 // Factory Function
-// const circle1 = {
-//   radius: null,
-//   location: {
-//     x: null,
-//     y: null,
-//   },
-//   drawCircle: function () {
-//     c('draw');
-//   },
-// };
+const circle1 = {
+  radius: 10,
+  color: 'red',
+  drawCircle: function () {
+    c('draw');
+  },
+};
 
-// const circle2 = {
-//   radius: null,
-//   location: {
-//     x: null,
-//     y: null,
-//   },
-//   drawCircle: function () {
-//     c('draw');
-//   },
-// };
+const circle2 = {
+  radius: 5,
+  color: 'green',
+  drawCircle: function () {
+    c('draw');
+  },
+};
 
 // Factory Function
 // Example
 // - Naming Convention = Camel Notation / Camel Case
 //  - camelCase
-function createCircle(radius) {
+
+const createCircle = function (radius, color) {
   return {
     radius,
+    color,
     draw() {
-      c('draw');
+      c('drawCircle');
     },
   };
-}
+};
 
-const myCircle = createCircle(1);
+const circle3 = createCircle(3, 'pink');
+c(circle3);
 
 // Constructor Function
-
 // Example
 // - Naming Convention = Pascal Notation / Pascal Case
 //  - PascalCase
-
-function Circle(radius) {
-  this.radius = radius; // this = empty object
+const Circle = function (radius, color) {
+  this.radius = radius;
+  this.color = color;
   this.draw = function () {
     c('draw');
   };
-}
+};
 
-const circleOne = new Circle(1); // new = empty object
+const circle4 = new Circle(30, 'violet');
+c(circle4);
+
 // new creates an empty object
 // const x = {}; // behind the scenes
 
 // Dynamic Nature of Objects
-const circle = {
-  radius: 1,
-};
 
+// c(circle);
 // ADDING / REMOVING PROPERTIES
 // - Adding
-circle.color = 'yellow';
-circle.draw = function () {};
+circle4.outline = 'black';
+c(circle4);
 // - Removing
-delete circle.color;
-delete circle.draw;
-
+delete circle4.draw;
+c(circle4);
 // Constructor Property
 // - Every object has a property called constructor and that references the function that was used to construct or create that object
 // - In JavaScript, functions are objects
@@ -134,10 +125,19 @@ function Character(name, level) {
 // Character.call({}, 'Twilight', 1);
 
 // Enumerating Properties of an Object
+const PlayerOne = new Character('Anya', 5);
+//  for in
+for (let key in PlayerOne) {
+  c(key, PlayerOne[key]);
+}
 
 // Object.keys() method returns an array of a given object's own enumerable property names, iterated in the same order that a normal loop would.
+const objKeys = Object.keys(PlayerOne);
+c(objKeys);
 
 // Object.entries() method returns an array of a given object's own enumerable string-keyed property [key, value] pairs, in the same order as that provided by a for...in loop.
+const objEntries = Object.entries(PlayerOne);
+c(objEntries);
 
 // Cloning an Object
 
@@ -153,19 +153,20 @@ const box1 = createBox(1, 2);
 const box2 = {};
 
 // Old Way
-// for (let key in box1) {
-//   box2[key] = box1[key];
-// }
-
-// c(box2, box1);
-
+for (let key in box1) {
+  box2[key] = box1[key];
+}
+c(box2);
 // Modern Way
-// const box3 = Object.assign(
-//   {
-//     color: 'red',
-//   },
-//   box1
-// );
+const box3 = Object.assign(
+  {
+    color: 'red',
+    outline: 'none',
+  },
+  box1
+);
+c(box3);
 
 // Spread Operator
-// const box4 = { ...box1 };
+const box4 = { ...box1 };
+c(box4);
