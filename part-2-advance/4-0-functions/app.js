@@ -22,36 +22,62 @@ const jump = () => {
 };
 
 // Hoisting -> JavaScript moves all function declarations to the top of the file
-// fly(); // this works because of hoisting
+fly(); // this works because of hoisting
 
-// function fly() {
-//   c('flying');
+function fly() {
+  c('flying');
+}
 
 // Arguments -> an array-like object
 function sum(a, b) {
   return a + b; // this is a return statement
 }
 
-function sumAll() {
-  let total = 0;
-  for (let value of arguments) total += value; // arguments is an array-like object
-  return total;
+function total() {
+  let sum = 0;
+  for (let value of arguments) {
+    // arguments is an array-like object
+    sum += value;
+  }
+  return sum;
 }
+
+c(total(1, 2, 3, 5, 6, 100));
 
 // Rest Operator -> ES6
 // ... -> rest operator
+function average(...args) {
+  // average = sum of items / total items
+  // let sum = 0;
+  // for (let arg of args) {
+  //   sum += arg;
+  //   c(sum);
+  // }
+  // return sum / args.length;
+  return args.reduce((a, b) => a + b) / args.length;
+}
+
+average(1, 2, 3, 5, 6);
 
 // Default Parameters -> ES6
 
+// function calcInterest(principal, rate) {
+//   // interest = principal * rate
+//   return (principal * rate) / 100;
+// }
+
 // Old Way
-// function interest(principal, rate, years) {
+// function calcInterest(principal, rate) {
 //   rate = rate || 3.5;
-//   years = years || 5;
-//   return ((principal * rate) / 100) * years;
+//   return (principal * rate) / 100;
 // }
 
 // ES6
-// function interest(principal, rate = 3.5, years = 5) {} // default parameters
+// default parameters
+function calcInterest(principal, years, rate = 3.5) {
+  return ((principal * rate) / 100) * years;
+}
+c(calcInterest(200, 10));
 // Best practice is to put default parameters at the end
 
 // Getters and Setters -> ES6
@@ -59,7 +85,22 @@ function sumAll() {
 let personObj = {
   firstName: 'John',
   lastName: 'Doe',
+  // getter
+  get fullName() {
+    return `${personObj.firstName} ${personObj.lastName}`;
+  },
+  // setter
+  set fullName(value) {
+    const parts = value.split(' ');
+    this.firstName = parts[0];
+    this.lastName = parts[1];
+  },
 };
+
+c(personObj);
+c(personObj.fullName);
+personObj.fullName = 'John Smith';
+c(personObj.fullName);
 
 // getter -> access properties
 // setter -> change (mutate) them

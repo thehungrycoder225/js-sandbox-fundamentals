@@ -21,23 +21,23 @@ objX.value += 10;
 c(`this is objX: ${objX.value} and this is objY: ${objY.value}`);
 
 // Example
-// let number = 10;
-// function increaseValue(number) {
-//   number++;
-// }
+let number = 10;
+function increaseValue(number) {
+  number++;
+}
 
-// increaseValue(number);
-// c(number);
+increaseValue(number);
+c(number);
 
 // Example
-// let numberObj = { value: 10 };
+let numberObj = { value: 10 };
 
-// function increaseObjValue(numberObj) {
-//   numberObj.value++;
-// }
+function increaseObjValue(numberObj) {
+  numberObj.value++;
+}
 
-// increaseObjValue(numberObj);
-// c(numberObj);
+increaseObjValue(numberObj);
+c(numberObj);
 
 // Primitives are copied by their value
 // Objects are copied by their reference
