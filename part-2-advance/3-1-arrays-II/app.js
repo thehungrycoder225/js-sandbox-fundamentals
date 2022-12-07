@@ -25,28 +25,34 @@ const firstOjb = [{ id: 1 }]; // Reference Type
 
 // Combining arrays
 // .concat() -> returns a new array
+const combined = first.concat(second);
 
 // Splitting arrays
 // .slice() -> returns a new array
 
 // Spread Operator -> ES6 a more elegant way to combine / copy arrays
+const combinedSpread = [...first, ...second, 'a', ...firstOjb];
 
 // Iterating arrays
 const fruits = ['🍈', '🍉', '🍊', '🍋', '🍌'];
 
 // Solution 1 - for of loop
+for (let i of fruits) {
+  c(i);
+}
 
 // Solution 2 - forEach()
+fruits.forEach((fruit) => c(fruit));
 
 // Joining arrays
-// .join()  -> when you see a ? in a method it means it's optional
-
+// -> when you see a ? in a method it means it's optional
 // Example
 const message = 'how to learn javascript in a day';
-// const parts = message.split(' ');
+const parts = message.split(' ');
 
 // const combined = parts.join('+'); // this method is used to create a slug for a url
-
+const combinedMessage = parts.join('%');
+// c(combinedMessage);
 // slug -> a string that is used to identify a web page in a search engine
 // https://www.google.com/search?q=how+to+learn+javascript+in+a+day
 

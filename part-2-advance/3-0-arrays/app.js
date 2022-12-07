@@ -30,6 +30,10 @@ fruits.splice(2, 0, 'Hello', 'There');
 // .includes(item, start) - returns true if the item is found
 const numbers = [1, 2, 3, 4, 5, 6, 1, 8, 9, 10];
 
+numbers.indexOf(1, 3);
+numbers.lastIndexOf(1);
+numbers.includes(1, 7);
+
 // Finding Elements - Reference Types
 
 // .find(callback) - returns the first element that satisfies the condition
@@ -40,3 +44,8 @@ const users = [
   { id: 2, name: 'Jane' },
   { id: 3, name: 'Bevs' },
 ];
+
+const findUser = users.find((user) => user.id === 4);
+const findUserIndex = users.findIndex((user) => user.id === 4);
+
+c(findUserIndex);
