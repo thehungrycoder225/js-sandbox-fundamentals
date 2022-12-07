@@ -56,11 +56,11 @@ const colors = new Array('red', 'green', 'blue');
 
 // for in loop mostly used to iterate over objects
 
-// for (key in person) {
-//   c(key, person[key]);
-// }
+for (key in person) {
+  c(key, person[key]);
+}
 
 // for of loop mostly used to iterate over arrays
-// for (color of colors) {
-//   c(color);
-// }
+for (color of colors) {
+  c(color);
+}

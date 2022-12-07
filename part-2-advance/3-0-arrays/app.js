@@ -29,11 +29,18 @@ fruits.splice(2, 0, 'Hello', 'There');
 // .lastIndexOf(item, start) - returns the index of the last occurrence of the item
 // .includes(item, start) - returns true if the item is found
 const numbers = [1, 2, 3, 4, 5, 6, 1, 8, 9, 10];
+<<<<<<< HEAD
 
 numbers.indexOf(1, 3);
 numbers.lastIndexOf(1);
 numbers.includes(1, 7);
 
+=======
+const indexArr = numbers.indexOf(1, 2);
+const lastIndexArr = numbers.lastIndexOf(1);
+const arrIncludes = numbers.includes(1, 5);
+c(arrIncludes);
+>>>>>>> ffad6cf0236afccdbd20959c487cf2c53378a86c
 // Finding Elements - Reference Types
 
 // .find(callback) - returns the first element that satisfies the condition
@@ -45,7 +52,12 @@ const users = [
   { id: 3, name: 'Bevs' },
 ];
 
+<<<<<<< HEAD
 const findUser = users.find((user) => user.id === 4);
 const findUserIndex = users.findIndex((user) => user.id === 4);
 
 c(findUserIndex);
+=======
+users.find((user) => user.id === 1); // find the first element that satisfies the condition
+users.findIndex((user) => user.id === 11); // find the index of the first element that satisfies the condition
+>>>>>>> ffad6cf0236afccdbd20959c487cf2c53378a86c
