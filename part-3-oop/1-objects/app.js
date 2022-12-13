@@ -45,3 +45,16 @@ let employee = {
 // Hiding the properties and methods that are not essential to the use of the object
 // Simple interface -> Functionality is not exposed to the outside world -> Not related to the UI
 // Reduce the impact of change -> If we change the implementation of the function, we don't have to change the interface
+
+// Inheritance -> Eliminate redundant code
+
+// Polymorphism -> Refactor ugly switch/case statements -> Poly = many, Morphy = forms -> Many forms
+// Example
+
+// html elements ->  being rendered on the DOM
+
+// Benefits of OOP
+// 1. Encapsulation -> Reduce complexity + Increase reusability
+// 2. Abstraction -> Reduce complexity + isolate impact of changes
+// 3. Inheritance -> Eliminate redundant code
+// 4. Polymorphism -> Refactor ugly switch/case statements
