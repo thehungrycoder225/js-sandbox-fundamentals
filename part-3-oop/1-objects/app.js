@@ -41,4 +41,7 @@ let employee = {
 
 // Abstraction -> Hiding the complexity/details and showing only the essentials
 // Example
+
 // Hiding the properties and methods that are not essential to the use of the object
+// Simple interface -> Functionality is not exposed to the outside world -> Not related to the UI
+// Reduce the impact of change -> If we change the implementation of the function, we don't have to change the interface
