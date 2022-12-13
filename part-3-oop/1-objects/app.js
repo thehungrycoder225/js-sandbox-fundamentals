@@ -15,6 +15,7 @@
 // data -> properties
 // functions -> methods
 
+// Encapsulation -> Combining related data and functions into objects
 // Example
 // Procedural programming
 
@@ -35,3 +36,9 @@ let employee = {
     return this.baseSalary + this.overtime * this.rate;
   },
 };
+
+// The best function is a function that doesn't have parameters - Robert C. Martin aka (Uncle Bob)
+
+// Abstraction -> Hiding the complexity/details and showing only the essentials
+// Example
+// Hiding the properties and methods that are not essential to the use of the object
