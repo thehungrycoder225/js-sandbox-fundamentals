@@ -45,8 +45,38 @@ a.value = 20;
 c(a, b); // {value: 20}, {value: 20}
 
 // Adding or Removing Properties
+class Fruit {
+  constructor(name, shape, color) {
+    this.name = name;
+    this.shape = shape;
+    this.color = color;
+  }
+}
+
+const fruitOne = new Fruit('Apple', 'round', 'red');
+c(fruitOne);
+// Adding Properties
+fruitOne.isRipe = true;
+c(fruitOne);
+
+// Removing Properties
+delete fruitOne.isRipe;
+c(fruitOne);
 
 // Enumerating Properties
+// Solution 1
+// for in loop
+for (let key in fruitOne) {
+  c(key, fruitOne[key]);
+}
+
+// Solution 2
+// Object.keys
+c(Object.keys(fruitOne));
+
+// Solution 3
+// Object.entries
+c(Object.entries(fruitOne));
 
 // Abstraction
 
